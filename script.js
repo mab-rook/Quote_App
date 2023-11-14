@@ -23,7 +23,7 @@ function displayQoute() {
 function randomQuote() {
   quoteBtn.classList.add("loading");
   quoteBtn.innerText = "Loading Quote...";
-  fetch("http://api.quotable.io/random")
+  fetch("https://api.quotable.io/random")
     .then((response) => response.json())
     .then((result) => {
       quoteText.innerText = result.content;
