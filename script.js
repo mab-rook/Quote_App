@@ -10,9 +10,9 @@ const quoteText = document.querySelector(".quote"),
 function displayQoute() {
   quoteBtn.classList.add("loading");
   quoteBtn.innerText = "Loading Quote...";
-  const randomIndex = Math.floor(Math.random() * qoutes.length);
-  const qoute = qoutes[randomIndex];
-  quoteText.innerText = qoute;
+  const randomIndex = Math.floor(Math.random() * quotes.length);
+  const quote = quotes[randomIndex];
+  quoteText.innerText = quote;
   quoteBtn.classList.remove("loading");
   quoteBtn.innerText = "New Quote";
   // qouteContainer.innerHTML = `<p id="tex">${qoute}</p>`
